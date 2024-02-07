@@ -1,1 +1,1 @@
-gi
+# hapus file ini

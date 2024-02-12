@@ -2,7 +2,7 @@
 
 Welcome to our online shopping website! This repository hosts the code for our e-commerce platform, where users can browse, search for, and purchase a variety of products conveniently from their devices. Below, you'll find information on how to navigate our repository and contribute to our project.
 
-## Features
+# Features
 Product Catalog: Browse through a wide range of products across various categories.
 Search Functionality: Easily find specific products using our search feature.
 User Authentication: Create an account, log in, and manage your profile.
@@ -12,12 +12,12 @@ Order Tracking: Track the status of your orders from purchase to delivery.
 
 # Technologies Used
 Frontend: HTML
-Backend: -
-Payment Processing: 
-Authentication: 
-Testing: -
 
+# image
+image about denim style jacket option for add to cart
 
+# paragraph
+article about when, how and what season denim is right to wear 
 
 # Contributing
 We welcome contributions from the community to help improve our platform. If you'd like to contribute, please follow these guidelines:

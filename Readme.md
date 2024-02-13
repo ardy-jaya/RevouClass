@@ -15,6 +15,7 @@ Frontend: HTML
 
 # image
 image about denim style jacket option for add to cart
+<img src="jeans.webp" alt="woman with denim jacket and jeans pants">
 
 # paragraph
 article about when, how and what season denim is right to wear 

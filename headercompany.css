@@ -1,0 +1,14 @@
+.icon-container {
+  display: flex;
+}
+.icon {
+  width: 2rem;
+  height: auto;
+}
+.logo-hermes{
+    width: 15rem;
+    height: 15rem;
+    filter: opacity(50%);
+    filter: grayscale(1);
+
+}

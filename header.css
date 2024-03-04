@@ -1,12 +1,21 @@
-.contfav {display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgb(100, 93, 93);
-    align-items: center;
-  height: 60px;
-  padding: 0px;}
-  
+.contfav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(228, 225, 225);
+  align-items: center;
+  height: 5vw;
+  padding: 0px;
+}
+
+.header {
+  font-size: 2em;
+}
+.logo {
+  width: 4vw;
+  height: auto;
+}

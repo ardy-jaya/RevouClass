@@ -1,0 +1,59 @@
+.darkmode {
+  width: 55px;
+  height: 25px;
+  position: relative;
+  display: block;
+  background: #fcfafa;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.darkmode :after {
+  content: "";
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  top: 3px;
+  left: 35px;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#darkmode-toggle {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+/* #darkmode-toggle:checked +.darkmode::after {
+  background: #242424;
+} */
+
+#darkmode-toggle:checked + #label:after {
+  left: 20px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #0e0d0d);
+}
+
+#label:after {
+  transition: 2s;
+  transition-duration: 1s;
+}
+
+/* #label:active::after {
+  width: -3px;
+} */
+
+.background {
+  background-color: #0e0c0c;
+  transition: 2s;
+}
+
+#darkmode-toggle:checked + .background::after{ 
+  background-color: #c0b6b6;
+  transition: 2s;
+  z-index: -1;
+}

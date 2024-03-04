@@ -30,6 +30,11 @@ Submit a pull request with a clear description of your changes.
 here is the link
 https://github.com/RevoU-FSSE-4/module-1-ardy-jaya.git
 
+# access my web
+https://www.aboutdenim.blog/
+
+
+
 # Contact
 If you have any questions or feedback, feel free to reach out to us at ardy.henjaya@gmail.com. We'd love to hear from you!
 

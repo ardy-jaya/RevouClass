@@ -1,0 +1,12 @@
+.contfav {display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(100, 93, 93);
+    align-items: center;
+  height: 60px;
+  padding: 0px;}
+  

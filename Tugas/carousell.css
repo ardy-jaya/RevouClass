@@ -1,53 +1,83 @@
-.gallery {
+.container {
   display: flex;
-  transition: 2s;
-}
-
-.wrap {
-  width: 400px ;
-
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 10px;
-  /* border-radius: 50px; */
   overflow: hidden;
-  align-items: center;
-  text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
-#slide1:target ~ .gallery {
-  margin-left: 0%;
+/* .container > img {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+} */
+
+.container-carousell {
+  height: 800px;
+  position: relative;
+  width: 100%;
+  /* display: block; */
+  margin: 0px auto;
+  border: 3px solid lightgrey;
 }
 
-#slide2:target ~ .gallery {
-  margin-left: -100%;
+.button-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
-#slide3:target ~ .gallery {
-  margin-left: -200%;
-}
-
-#slide4:target ~ .gallery {
-  margin-left: -300%;
-}
-
-#slide5:target ~ .gallery {
-  margin-left: -400%;
-}
-
-.navigationwrap a {
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  background-color: rgb(73, 71, 68);
-  margin-top: 5px;
-  font-size: 0px;
-  border-radius: 50%;
+  padding: 12px;
+}
+.arrow-prev {
+  left: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+.arrow-next {
+  right: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
-.navigationwrap a:hover {
-  background-color: rgb(17, 224, 224);
-  transition: 1s;
+[id^="item"] {
+  display: none;
 }
 
-.html{scroll-padding-top: 90px;}
+.item-1 {
+  z-index: 1;
+  opacity: 1;
+  background: url("https://wallpaperswide.com/download/coat_model_fashion-wallpaper-1920x1200.jpg");
+  background-size: cover;
+}
+.item-2 {
+  background: url("https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg");
+  background-size: cover;
+}
+.item-3 {
+  background: url("https://wallpapers.com/images/featured/ultra-hd-wazf67lzyh5q7k32.jpg");
+  background-size: cover;
+}
+
+.container-button:target ~ .item-1 {
+  opacity: 0;
+}
+#item-1:target ~ .item-1 {
+  opacity: 1;
+}
+
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3 {
+  z-index: 3;
+  opacity: 1;
+}

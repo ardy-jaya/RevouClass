@@ -1,21 +1,23 @@
-/* .container {
+.container {
   display: flex;
   overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
-.container > img {
+/* .container > img {
   width: 100%;
   height: auto;
   z-index: -1;
-}
+} */
 
 .container-carousell {
-  height: 1080px;
+  height: 800px;
   position: relative;
-  width: auto;
-  display: block;
+  width: 100%;
+  /* display: block; */
   margin: 0px auto;
-  border: 3px solid black;
+  border: 3px solid lightgrey;
 }
 
 .button-item {
@@ -59,7 +61,6 @@
   background-size: cover;
 }
 .item-2 {
-  z-index: 3;
   background: url("https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-preview.jpg");
   background-size: cover;
 }
@@ -68,7 +69,7 @@
   background-size: cover;
 }
 
-.button-item:target ~ .item-1 {
+.container-button:target ~ .item-1 {
   opacity: 0;
 }
 #item-1:target ~ .item-1 {
@@ -79,56 +80,4 @@
 #item-3:target ~ .item-3 {
   z-index: 3;
   opacity: 1;
-} */
-.gallery {
-    display: flex;
-    transition: 2s;
-  }
-  
-  .wrap {
-    width: 400px ;
-  
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    /* border-radius: 50px; */
-    overflow: hidden;
-    align-items: center;
-    text-align: center;
-  }
-  
-  #slide1:target ~ .gallery {
-    margin-left: 0%;
-  }
-  
-  #slide2:target ~ .gallery {
-    margin-left: -100%;
-  }
-  
-  #slide3:target ~ .gallery {
-    margin-left: -200%;
-  }
-  
-  #slide4:target ~ .gallery {
-    margin-left: -300%;
-  }
-  
-  #slide5:target ~ .gallery {
-    margin-left: -400%;
-  }
-  
-  .navigationwrap a {
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-color: rgb(73, 71, 68);
-    margin-top: 5px;
-    font-size: 0px;
-    border-radius: 50%;
-  }
-  
-  .navigationwrap a:hover {
-    background-color: rgb(17, 224, 224);
-    transition: 1s;
-  }
-  
+}
